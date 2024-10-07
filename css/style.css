@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --COLOR: #7C2AE8;
+  --FONT_SIZE: 18px;
+  --FONT_FAMILY: "Nunito", sans-serif;
+  --BG_COLOR: #E5E8E7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--BG_COLOR);
+  font-family: var(--FONT_FAMILY);
+}
+
+.container {
+    margin: 50px 100px;
+}
+
+button {
+  box-shadow: 4px 5px 2px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 4px 5px 2px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 4px 5px 2px 0px rgba(0,0,0,0.75);
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 9px 12px 11px 2px rgba(0,0,0,0.76);
+  -webkit-box-shadow: 9px 12px 11px 2px rgba(0,0,0,0.76);
+  -moz-box-shadow: 9px 12px 11px 2px rgba(0,0,0,0.76);
+}
+
+nav {
+  display: flex;
+  line-height: 60px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+nav>span {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+nav>span b {
+  color: #7C2AE8;
+  font-weight: 800;
+}
+
+.header {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header>a {
+    padding: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header>a:hover {
+  text-decoration: underline;
+  opacity: .7;
+}
+
+nav>button {
+  border: 1px solid var(--COLOR);
+  border-radius: 20px;
+  padding: 4px 50px;
+  background-color: var(--COLOR);
+  color: white;
+  font-size: 18px;
+}
+
+.info-section {
+  margin-top: 200px;
+  display: flex;
+}
+
+.info p {
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.info p span {
+  color: var(--COLOR);
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.info>span {
+  font-size: 20px;
+  line-height: 30px;
+  color: #666565;
+}
+
+.info-button>button {
+  border: 1px solid var(--COLOR);
+  border-radius: 20px;
+  padding: 15px 50px;
+  background-color: var(--COLOR);
+  color: white;
+  font-size: 18px;
+  margin: 20px 25px 200px 0;
+}
+
+.info-button>button:last-child {
+  background-color: var(--BG_COLOR);
+  color: var(--COLOR);
+  border: 2px solid var(--COLOR);
+}
+
+.contact>a {
+  color: var(--BG_COLOR);
+  border: 1px solid var(--COLOR);
+  border-radius: 30px;
+  background-color: var(--COLOR);
+  padding: 13px;
+  margin-left: 15px;
+}
+
+img {
+  border: 5px solid var(--COLOR);
+  border-radius: 50%;
+  padding: 10px;
+  width: 40vw;
+  margin-left: 200px;
+  margin-top: -100px;
+  text-align: center;
+}
